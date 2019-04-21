@@ -1,7 +1,13 @@
 <template>
   <div>
-    <p>
+    <p v-if="msg.length > 0">
       {{msg}}
+    </p>
+    <p v-else>
+      (null)
+    </p>
+    <p>
+      msg.length = {{msg.length}}
     </p>
     <input type="text" v-model="msg">
   </div>
