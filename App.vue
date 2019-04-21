@@ -10,6 +10,7 @@
       msg.length = {{msg.length}}
     </p>
     <input type="text" v-model="msg">
+    <button @click="clear()">clear</button>
   </div>
 </template>
 
@@ -18,6 +19,11 @@ export default {
   data() {
     return {
       msg: "Hello!"
+    }
+  },
+  methods: {
+    clear() {
+      this.msg = ""
     }
   }
 }
