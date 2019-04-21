@@ -1,6 +1,7 @@
 <template>
   <div>
     <myheader></myheader>
+    <myheader></myheader>
     <p v-if="msg.length > 0">
       {{msg}}
     </p>
